@@ -1,12 +1,11 @@
 {
-  "name": "Ubuntu Dev Container",
+  "name": "Modified Rocker Dev Container",
   "build": {
     "dockerfile": "Dockerfile",
     "context": ".."
   },
   "features": {
-    "ghcr.io/devcontainers/features/node:1": {
-      "version": "16"
-    }
+		"ghcr.io/MiguelRodo/DevContainerFeatures/repos:1": {},
+    "ghcr.io/MiguelRodo/DevContainerFeatures/config-r:2": {}
   }
 }
