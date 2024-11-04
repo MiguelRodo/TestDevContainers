@@ -1,0 +1,24 @@
+# Use the official Ubuntu image as the base
+FROM ubuntu:20.04
+
+# Avoid interactive prompts during package installation
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Install basic dependencies
+RUN apt-get update && apt-get install -y \
+    curl \
+    ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy the .devcontainer directory into the image
+COPY .devcontainer /usr/local/share/.devcontainer
+
+RUN ls / > /usr/local/share/root_directory_listing.txt && \
+    ls /usr/local/share/.devcontainer > /usr/local/share/devcontainer_directory_listing.txt && \
+    if [ -d /workspaces ]; then \
+        echo "/workspaces exists. Contents:" > /usr/local/share/workspaces_status.txt && \
+        ls /workspaces >> /usr/local/share/workspaces_status.txt; \
+    else \
+        echo "/workspaces does not exist." > /usr/local/share/workspaces_status.txt; \
+    fi
+
