@@ -1,0 +1,23 @@
+{
+  "R": {
+    "Version": "4.4.0",
+    "Repositories": [
+      {
+        "Name": "PPM",
+        "URL": "https://packagemanager.posit.co/cran/latest"
+      }
+    ]
+  },
+  "Bioconductor": {
+    "Version": "3.14"
+  },
+  "Packages": {
+    "AsioHeaders": {
+      "Package": "AsioHeaders",
+      "Version": "1.22.1-2",
+      "Source": "Repository",
+      "Repository": "https://packagemanager.rstudio.com/all/__linux__/jammy/latest",
+      "Hash": "85bf3bd8fa58da21a22d84fd4f4ef0a8"
+    }
+  }
+}

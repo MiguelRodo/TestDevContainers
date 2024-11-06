@@ -1,13 +1,16 @@
 {
-  "name": "Modified Rocker Dev Container",
-  "build": {
-    "dockerfile": "Dockerfile",
-    "context": ".."
-  },
+  "image": "mcr.microsoft.com/devcontainers/universal:linux",
   "features": {
-		"ghcr.io/MiguelRodo/DevContainerFeatures/repos:1": {},
-    "ghcr.io/MiguelRodo/DevContainerFeatures/config-r:2": {
-      "debug": true
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "version": "latest",
+      "moby": true
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker"
+      ]
     }
   }
 }
