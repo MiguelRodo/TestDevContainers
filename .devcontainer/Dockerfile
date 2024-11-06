@@ -1,5 +1,5 @@
 # Use the official Ubuntu image as the base
-FROM ghcr.io/rocker-org/devcontainer/geospatial:4.4
+FROM rocker/r-ver:4.4.0
 
 # Avoid interactive prompts during package installation
 ENV DEBIAN_FRONTEND=noninteractive
