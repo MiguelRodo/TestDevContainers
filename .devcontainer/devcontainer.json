@@ -9,7 +9,8 @@
       "installHuggingFace": false
     },
     "ghcr.io/MiguelRodo/DevContainerFeatures/config-r:2": {
-      "debug": true
+      "debug": true,
+      "debugRenv": true
     }
   }
 }
