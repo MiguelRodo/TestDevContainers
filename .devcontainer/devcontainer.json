@@ -5,7 +5,9 @@
     "context": ".."
   },
   "features": {
-		"ghcr.io/MiguelRodo/DevContainerFeatures/repos:1": {},
+		"ghcr.io/MiguelRodo/DevContainerFeatures/repos:1": {
+      "installHuggingFace": false
+    },
     "ghcr.io/MiguelRodo/DevContainerFeatures/config-r:2": {
       "debug": true
     }
