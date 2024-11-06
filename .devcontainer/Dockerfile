@@ -7,7 +7,6 @@ RUN install2.r --error --skipinstalled --ncpus -1 \
 WORKDIR /project
 COPY renv.lock renv.lock
 
-# approach two
 RUN mkdir -p renv
 COPY .Rprofile .Rprofile
 COPY renv/activate.R renv/activate.R
