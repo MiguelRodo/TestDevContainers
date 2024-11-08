@@ -1,5 +1,5 @@
 # Use the official Ubuntu image as the base
-FROM rocker/geospatial:4.4
+FROM rocker/verse:4.4
 
 # Avoid interactive prompts during package installation
 ENV DEBIAN_FRONTEND=noninteractive
