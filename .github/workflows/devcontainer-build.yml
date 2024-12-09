@@ -9,7 +9,7 @@ on:
       use_cache:
         description: 'Use cache when building the image'
         required: false
-        default: 'true'
+        default: 'false'
 
 jobs:
   build:
