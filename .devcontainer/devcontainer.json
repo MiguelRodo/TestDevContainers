@@ -5,6 +5,6 @@
     "context": ".."
   },
   "features": {
-    "ghcr.io/MiguelRodo/DevContainerFeatures/mermaid:1.0.7": {}
+    "ghcr.io/MiguelRodo/DevContainerFeatures/mermaid:1.1.0": {}
   }
 }
